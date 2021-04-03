@@ -1,0 +1,10 @@
+.float{
+	position:fixed;
+	bottom:140px;
+	right:10px;
+	text-align:center;
+}
+
+#output{
+	font-family: 'Courier New', Courier, monospace;
+}

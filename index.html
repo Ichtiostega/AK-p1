@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <title>AlgGen</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <script src="app.js"></script>
+    <div class="float">
+        <div style="width: 300px; height: 150px;">
+            <canvas id="line0" width="300" height="150" 
+                style="border:1px solid #000000; position: absolute; left: 0; top: 0; z-index: 0;"></canvas>
+            <canvas id="line1" width="300" height="150" 
+                style="border:1px solid #000000; position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+            <canvas id="line2" width="300" height="150" 
+                style="border:1px solid #000000; position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+        </div><br>
+        <button onclick="play()">PLAY</button>
+        <button onclick="stop()">STOP</button>
+        <button onclick="revert()">REVERT</button>
+    </div>
+    <div id="inputs">
+        <h4>Rule</h4>
+        <input id="rule", type="number">
+        <h4>Start frame</h4>
+        <input id="frame", type="number">
+    </div>
+    <div id="output"></div>
+</body>
+
+</html>
